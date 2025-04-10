@@ -59,12 +59,17 @@ function App() {
 
 	return (
 		<div className="max-w-[1280px] mx-auto p-8 text-center">
-			<h1 className="text-4xl font-bold mb-10">Oi bobãoosss</h1>
+			<h1 className="text-4xl font-bold flex flex-col">
+				Oi bobãozãozisss
+				<span className="text-2xl mb-10 text-pink-400">
+					Clique ou Passe pelos nos cards
+				</span>
+			</h1>
 			<div className="flex flex-col items-center justify-center w-full gap-8">
 				{textos.map((item, index) => (
 					<div
 						key={index}
-						className={`reveal-${index} relative bg-[#FF4D6D] text-white max-w-[500px] w-full p-10 rounded-[25px] flex flex-col gap-4 group overflow-hidden`}
+						className={`reveal-${index} relative bg-[#FF4D6D] text-white max-w-[500px] w-full p-20 rounded-[25px] flex flex-col gap-4 group overflow-hidden`}
 					>
 						<img
 							src={item.img}
@@ -76,6 +81,7 @@ function App() {
 				))}
 			</div>
 			<Hearts />
+			<div className="mt-5">Bjuss vidocass com carinho leléo 💕</div>
 		</div>
 	);
 }
